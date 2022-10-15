@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   get "tasks/:id", to: "tasks#show"
   # Defines the root path route ("/")
   # root "articles#index"
-
+  get "tasks/:id/edit", to: "tasks#edit"
+  patch "tasks/:id", to: "tasks#update"
 end
